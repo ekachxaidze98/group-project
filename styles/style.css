@@ -1,3 +1,29 @@
+.collection .collection-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.collection .collection-items .side-bar {
+  width: 23%;
+  height: 2260px;
+  background-color: orange;
+}
+
+.collection .collection-items .wrapper {
+  width: 75%;
+  height: 2260px;
+  background-color: orchid;
+}
+
 * {
   margin: 0;
   padding: 0;

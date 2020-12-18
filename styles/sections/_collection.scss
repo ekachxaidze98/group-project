@@ -1,0 +1,18 @@
+.collection{
+    .collection-items {
+        @include flex;
+        .side-bar{
+            width: 23%;
+            height: 2260px;
+            background-color: orange;
+        }
+
+        .wrapper{
+            width: 75%;
+            height: 2260px;
+            background-color: orchid;
+
+           
+        }
+    }
+}
