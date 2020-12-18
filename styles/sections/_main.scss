@@ -1,0 +1,408 @@
+// carusel
+.carusel-section {
+    .items {
+        @include flex();
+        .menu {
+            width: 23%;
+            height: 480px;
+            border: 1px solid #f5f5f5;
+            padding: 20px;
+            ul {
+                li {
+                    list-style-type: none;
+
+                    a {
+                        width: 100%;
+                        text-decoration: none;
+                        color: $text-primary;
+                        display: flex;
+                        padding: 10px 0;
+                        @include flex();
+                        
+                        .menu-item {
+                            display: flex;
+                            i {
+                                margin-right: 5px;
+                            }
+                        }
+                      
+                    }
+
+                }
+                
+            }
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        .carusel {
+            width: 75%;
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+            .carusel-item {
+                margin-top: 30px;
+                background-image: url("../img/slide-img2.webp");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 445px;
+                @include center();
+                align-items: unset;
+                text-align: unset;
+                .text-container {
+                    padding-left: 60px;
+                    span {
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: $text-dark;
+                        padding: 10px 0;
+                        border-bottom: 1px solid $text-dark;
+                    }
+                    h3 {
+                        font-size: 62px;
+                        color: $text-dark;
+                    }
+                    p {
+                        font-size: 14px;
+                        color: $text-dark;
+                    }
+                    .buy-btn {
+                        color: $white-color;
+                        font-size: 16px;
+                        background-color: $primary-color;
+                        font-weight: bold;
+                        text-decoration: none;
+                        margin: 10px 0;
+                        padding: 8px 25px;
+                        border-radius: 3px;
+                        display: inline-block;
+                        transition: all 0.35s ease-in;
+                        &:hover {
+                            color: $text-dark;
+                            background-color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 970px) {
+        padding: 0 50px;
+    }
+}
+// 
+.main-section {
+    padding: 20px 0;
+    @media only screen and (max-width: 970px) {
+        padding: 0 50px;
+    }
+
+    .items {
+        @include flex();
+        width: 100%;
+        .side-bar {
+            width: 23%;
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+                @include center();
+                margin: 15px 0;
+            }
+            .deal {
+                @media only screen and (max-width: 768px) {
+                    width: 40%;
+                }
+                @media only screen and (max-width: 600px) {
+                    width: 60%;
+                }
+                .deal-img {
+                    background-image: url("../img/custom-slide1.webp");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 200px;
+                    @include center();
+
+                    h4 {
+                        font-size: 34px;
+                        display: block;
+                        line-height: 30px;
+                        padding-bottom: 10px;
+                        letter-spacing: 1px;
+                        font-weight: 700;
+                        color: $white-color;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        letter-spacing: 0.3px;
+                        color: $white-color;
+                    }
+                }
+            }
+            .top-seller {
+                height: 400px;
+                margin: 25px 0;
+                background-color: $white-color;
+                border: 1px  solid #eaeaea;
+                @media only screen and (max-width: 768px) {
+                    height: 560px;
+                }
+                .card-img {
+                    background-image: url("../img/product3_1dec95eb-c218-4106-8ac6-b7d83c498641.jpg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 260px;
+                    @media only screen and (max-width: 768px) {
+                        height: 430px;
+                    }
+                    .raiting {
+                        display: flex;
+                        justify-content: flex-end;
+                        span {
+                            margin-top: 5px;
+                            font-size: 10px;
+                            color: #fff;
+                            background: #ff4318;
+                            padding: 2px 10px;
+
+                        }
+                        }
+                    
+                    .time {
+                        display: flex;
+                        flex-direction: column;
+                        span {
+                            margin-left: 10px;
+                            background: #ffffff;
+                            font-size: 14px;
+                            color: #000000;
+                            width: 50px;
+                            height: 50px;
+                            margin-top: 7px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            border: 1px #f8f8f8 solid;
+                            padding: 15px;
+                            @include center();
+
+                            &:first-child  {
+                                background: $primary-color;
+                                color: $white-color;
+                                border: 1px $primary-color solid;
+                                }
+                        }
+                    }
+                }
+                @media only screen and (max-width: 768px) {
+                    width: 70%;
+                }
+            }
+            .testemonial {
+                @include center();
+                padding: 25px 40px;
+                border: 1px  solid #eaeaea;
+                border-bottom: 4px solid $primary-color;
+                margin-bottom: 20px;
+                img {
+                    border-radius: 50%;
+                    border: 2px solid $white-color;
+                    width: 100px;
+                    height: 100px;
+                }
+                p {
+                    @include mainText();
+                    padding: 15px 0;
+                }
+                .p-line {
+                    height: 1px;
+                    width: 70px;
+                    margin: auto;
+                    border: 1px solid #ddd;
+                    margin-bottom: 15px;
+                    
+                }
+                span {
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    margin: 0 auto 10px;
+                    color: $primary-color;
+                    
+                }
+            }
+            // 
+            .discount {
+                position: relative;
+                width: 100%;
+                @media only screen and (max-width: 768px) {
+                    width: 50%;
+                   
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .disscount-price {
+                    position: absolute;
+                    left: 5%;
+                    right: 5%;
+                    bottom: 14%;
+                    text-align: center;
+                    color: #fff;
+                    pointer-events: none;
+                    span {
+                        color: $white-color;
+                        font-size: 14px;
+                        line-height: 15px;
+                        margin: 0 0 10px;;
+                        letter-spacing: 1px;
+                        font-weight: bold;
+                    }
+                    h3 {
+                        font-size: 40px;
+                        color: $white-color;
+                        font-weight: 700;
+                        line-height: 50px;
+                        font-weight: bold;
+                    }
+                    p{ 
+                        font-size: 12px;
+                        color: $white-color;
+                        margin-bottom: 15px;
+                    }
+                    a {
+                        background-color: #333;
+                        border: 1px solid #333;
+                        border-radius: 2px;
+                        color: $white-color;
+                        cursor: pointer;
+                        font-weight: bold;
+                        padding:  7px 18px;
+                        text-decoration: none;
+                        font-size: 12px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
+        .wrapper {
+            width: 75%;
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+               
+            }
+            .discounts {
+                @include flex();
+                @media only screen and (max-width: 768px) {
+                    justify-content: center;
+                }
+                .item {
+                    width: 48%;
+                    @media only screen and (max-width: 768px) {
+                        width: 70%;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                
+            }
+            // 
+            .new-products {
+                .title-container {
+                    .buttons {
+                        a {
+                            text-decoration: none;
+                            display: inline-block;
+                            color: #777;
+                            font-size: 12px;
+                            letter-spacing: 1px;
+                            padding: 10px 18px 10px 18px;
+                            font-weight: 600;
+                            background: #f2f2f2;
+                            border-radius: 3px;
+                            transition: color 0.35s ease-in;
+                            &:hover {
+                                color: $primary-color;
+                            }
+                            &:first-child {
+                                color: $white-color;
+                                background-color: $primary-color
+                            }
+                            @media only screen and (max-width: 970px) {
+                                font-size: 11px;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            // best
+            .best-seller {
+                .title-container {
+                    border-bottom: 4px solid #e5e5e5;
+                    .page {
+                        i {
+                            transition: color 0.35s ease-in;
+                            cursor: pointer;
+                            &:hover {
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+                .card-items {
+                    .item {
+                        width: 31%;
+                        @media only screen and (max-width: 970px) {
+                            width: 29.5%;
+                            height: 300px;
+                        }
+                        @media only screen and (max-width: 768px) {
+                            height: 350px;
+                        }
+                        @media only screen and (max-width: 600px) {
+                            width: 46%;
+                            height: 340px;
+                        }
+                        .cardimg-cont {
+                            height: 265px;
+                            @media only screen and (max-width: 970px) {
+                                height: 180px;
+                            }
+                            @media only screen and (max-width: 768px) {
+                                height: 200px;
+                            }
+                            @media only screen and (max-width: 600px) {
+                                height: 200px;
+                            }
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            // featured
+            .featured-products {
+                .title-container {
+                    border-bottom: 4px solid #e5e5e5;
+                    .page {
+                        i {
+                            transition: color 0.35s ease-in;
+                            cursor: pointer;
+                            &:hover {
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

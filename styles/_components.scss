@@ -34,6 +34,9 @@
             }
         }
     }
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
 }
 .line {
     width: 100%;
@@ -46,8 +49,14 @@
     .items {
         width: 100%;
         @include flex();
+        @media only screen and (max-width: 768px) {
+            @include center();
+        }
         .logo {
             width: 25%;
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
         }
         .item {
            @include flex();
@@ -56,6 +65,12 @@
                 position: relative;
                 width: 60%;
                 border: 1px solid  #e5e5e5;
+                @media only screen and (max-width: 768px) {
+                    width: 85%;
+                }
+                @media only screen and (max-width: 600px) {
+                    width: 75%;
+                }
               }
               input {
                 font-size: 14px;
@@ -105,6 +120,9 @@
                         font-size: 11px;
                         color: $text-primary;
                     }
+                    @media only screen and (max-width: 768px) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -132,6 +150,15 @@
                 font-size: 18px;
                 font-weight: 600;
                 letter-spacing: 1.5px;
+                @media only screen and (max-width: 970px) {
+                    font-size: 15px;
+                }
+            }
+            @media only screen and (max-width: 768px) {
+                background-color: #222;
+                width: 100%;
+                align-items: unset;
+                justify-content: unset;
             }
         }
         .item {
@@ -148,7 +175,148 @@
                text-decoration: none;
                 border-radius: 2px;
                 letter-spacing: 1px;
+                @media only screen and (max-width: 970px) {
+                    display: none;
+                }
             }
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}
+// btn
+.select-btn {
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #e5e5e5 ;
+    color: $text-dark;
+    padding: 5px 7px;
+    font-size: 11px;
+    font-weight: bold;
+    transition: all 0.35s ease-in;
+    
+}
+// titlee
+.title-container {
+    @include flex();
+    margin: 20px 0;
+    padding: 15px 0;
+    .title {
+        color: #333;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: 1px;
+        padding-top: 6px;
+        @media only screen and (max-width: 970px) {
+            font-size: 18px;
+        }
+    }
+}
+// cards 
+.card-body {
+    @include center();
+    .type {
+        text-decoration: none;
+        font-size: 14px;
+        color: $text-dark;
+        padding: 7px 0;
+    }
+    .icons {
+        color: #bbb;
+    }
+    .money {
+        font-weight: bold;
+        padding: 5px 0;
+    }
+}
+// card
+.card-items {
+    @include align-cards();
+    
+    .item {
+        width: 22.3%;
+        transition: all 0.35s ease-in;
+        @media only screen and (max-width: 970px) {
+            width: 45%;
+            height: 390px;
+        }
+        @media only screen and (max-width: 768px) {
+            height: 450px;
+        }
+        @media only screen and (max-width: 600px) {
+            height: 390px;
+        }
+        .cardimg-cont {
+            height: 190px;
+            overflow: hidden;
+            transition: all 0.35s ease-in;
+            position: relative;
+            overflow: hidden;
+            transition: 0.5s;
+            .hover-icons {
+                @include align-cards();
+                .hover-icon {
+                    border-radius: 50%;
+                    color: $primary-color;
+                    background-color: $white-color;
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    bottom: -45px;
+                    transition: 0.5s;
+                    @include center();
+                }
+            }
+            @media only screen and (max-width: 970px) {
+                height: 270px;
+            }
+            @media only screen and (max-width: 768px) {
+                height: 320px;
+            }
+            @media only screen and (max-width: 600px) {
+                height: 250px;
+            }
+            img {
+                width: 100;
+                height: 100%;
+                transition: all 0.35s ease-in;
+                @media only screen and (max-width: 970px) {
+                    width: 100%;
+                }
+                
+            }
+            &:hover .hover-icon{
+                bottom: 0;
+            }
+        }
+        .card-body {
+            @include center();
+            .type {
+                text-decoration: none;
+                font-size: 14px;
+                color: $text-dark;
+                padding: 7px 0;
+            }
+            .icons {
+                color: #bbb;
+            }
+            .money {
+                font-weight: bold;
+                padding: 5px 0;
+            }
+        }
+        &:hover .select-btn{
+            background-color: $primary-color;
+            color: $white-color;
+            border: 1px solid $primary-color;
+        }
+        &:hover .type{
+            color: $primary-color;
+        }
+        &:hover img {
+            transform: scale(1.1);
         }
     }
 }
