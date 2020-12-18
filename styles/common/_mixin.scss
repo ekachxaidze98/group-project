@@ -17,3 +17,10 @@
     color: #777;
     font-size: 14px;
 }
+@mixin align-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
