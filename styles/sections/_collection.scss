@@ -87,7 +87,6 @@
         .wrapper{
             width: 75%;
             height: 1850px;
-            background-color: orchid;
             @include flex;
 
 
@@ -122,7 +121,6 @@
             .collection-poster{
                 width: 100%;
                 height: 391px;
-                background-color: orange;
                 background-size:  contain;
                 background-repeat: no-repeat;
                 background-position: center center;
@@ -141,6 +139,12 @@
                         font-family: sans-serif;
                         font-weight: bold;
                         font-size: 51px;
+                        color: $white-color;
+                    }
+
+                    p{
+                        font-family: sans-serif;
+                        color: $white-color;
                     }
                 }
 
@@ -152,7 +156,6 @@
             .collection-category {
                 width: 100%;
                 height: 1390px;
-                background-color: orange;
                 @include align-cards;
                 align-items: unset;
                 justify-content: unset;
@@ -161,7 +164,50 @@
                 .catalogue {
                     width: 30%;
                     height: 320px;
-                    background-color:  yellow;
+                
+
+                    .picture {
+                        width: 100%;
+                        height: 215px;
+                    
+
+                        .cat-img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .cat-description {
+                        width: 100%;
+                        height: 105px;
+                        @include center;
+                    }
+                    h3{
+                        font-family: sans-serif;
+                    }
+
+                    p{
+                        color: #d1d1d1;
+                    }
+
+                    .buy {
+                        width: 170px;
+                        height: 30px;
+                        background-color: white;
+                        font-family: sans-serif;
+                        font-size: 13px;
+                        text-decoration: none;
+                        padding-top: 8px;
+                        border: 1px solid #d1d1d1;
+                        color: #666666;
+                        margin-top: 10px;
+                        font-weight: bold;
+
+                        &:hover {
+                            background-color: #0283c0;
+                            color: $white-color;
+                            transition: 0.5s;
+                        }
+                    }
                     
                 }
             } 
