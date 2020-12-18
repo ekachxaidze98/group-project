@@ -6,7 +6,7 @@
         "common/_mixin.scss",
         "common/_variables.scss",
         "sections/_main.scss",
-        "sections/_about.scss",
+        "sections/_blog.scss",
         "sections/_collection.scss",
         "_layout.scss",
         "_components.scss"
