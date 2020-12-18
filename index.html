@@ -1,67 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/0cba82bad3.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <!-- contacts -->
     <section class="contacts">
         <div class="container">
-            <div class="items">          
-                    <div class="item">
-                        <span>Call: +1 800 123 1234</span>
-                        <div class="valute">
-                            <span>USD</span>
-                            <i class="fas fa-caret-down"></i>
-                        </div>
+            <div class="items">
+                <div class="item">
+                    <span>Call: +1 800 123 1234</span>
+                    <div class="valute">
+                        <span>USD</span>
+                        <i class="fas fa-caret-down"></i>
                     </div>
-                        <nav>
-                            <ul>
-                                <li><a href="">My Account</a></li>
-                                <li><a href="">Wishlist</a></li>
-                                <li><a href="">Checkout</a></li>
-                                <li><a href="">Login or Register</a></li>
-                            </ul>
-                        </nav>           
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">My Account</a></li>
+                        <li><a href="">Wishlist</a></li>
+                        <li><a href="">Checkout</a></li>
+                        <li><a href="">Login or Register</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </section>
     <div class="line"></div>
-      <!-- search -->
-      <section class="search-section">
-          <div class="container">
-              <div class="items">
-                  <div class="logo">
-                      <img src="img/logo.webp" alt="">
-                  </div>
-                  <div class="item">
+    <!-- search -->
+    <section class="search-section">
+        <div class="container">
+            <div class="items">
+                <a class="logo" href="">
+                    <img src="img/logo.webp" alt="">
+                </a>
+                <div class="item">
                     <form class="form">
                         <input type="text" placeholder="Search entire store here..." name="search">
                         <button type="submit"><i class="fas fa-search fa-lg"></i></button>
-                      </form>
-                      <div class="shop">
+                    </form>
+                    <div class="shop">
                         <i class="fas fa-shopping-bag shop-icon fa-lg"></i>
                         <div class="shopping-info">
                             <span>Shopping Cart</span>
-                            <span class="price">0 item /  $0.00</span>
+                            <span class="price">0 item / $0.00</span>
                         </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-      <section class="gitpush">
-        <div class="gela"></div>
-      </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- info -->
+    <section class="info">
+        <div class="container">
+            <div class="items">
+                <div class="menu">
+                    <i class="fas fa-bars"></i>
+                    <h3> All Categories </h3>
+                </div>
+                <div class="item">
+                    <span>Free Shipping Worldwide</span>
+                    <span> / Money Back Guarantee /</span>
+                    <span>Hotline +(888) 123-4567</span>
+                </div>
+                <div class="item">
+                    <a href="">OFFER ZONE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- carusel -->
+    <section class="carusel-section">
+        <div class="container">
+            <div class="items">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <div class="menu-item">
+                                    <i class="fas fa-home"></i>
+                                    <div class="list-item">HOME</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="collection.html">
+                                <div class="menu-item">
+                                    <i class="fab fa-dropbox"></i>
+                                    <div class="list-item">COLLECTIONS</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="menu-item">
+                                    <i class="fas fa-male"></i>
+                                    <div class="list-item">DRESSES</div>
+                                </div>
+                                <div class="arrow-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </a>
 
-      <div class=""></div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="menu-item">
+                                    <i class="fas fa-female"></i>
+                                    <div class="list-item">TOPS</div>
+                                </div>
+                                <div class="arrow-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="menu-item">
+                                    <i class="fas fa-cogs"></i>
+                                    <div class="list-item">ETHNIC WEAR</div>
+                                </div>
+                                <div class="arrow-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="menu-item">
+                                    <i class="fas fa-gift"></i>
+                                    <div class="list-item">PARTYWEAR</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="menu-item">
+                                    <i class="fas fa-child"></i>
+                                    <div class="list-item">BABY & KIDS</div>
+                                </div>
+                                <div class="arrow-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="menu-item">
+                                    <i class="fas fa-futbol"></i>
+                                    <div class="list-item">GAM & SPORT</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                <div class="menu-item">
+                                    <i class="fas fa-wifi"></i>
+                                    <div class="list-item">BLOG</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="menu-item">
+                                    <i class="fas fa-users"></i>
+                                    <div class="list-item">ABOUT US</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carusel">
+                    <div class="carusel-item">
+                        <div class="text-container">
+                            <span>Super Sale</span>
+                            <h3>FASHION LIFE</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <a class="buy-btn" href="">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main -->
+    <section class="main-section">
+        <div class="container">
+            <div class="items">
+                <div class="side-bar">
+                    <div class="deal">
+                        <div class="deal-img">
+                            <div class="deal-info">
+                                <h4>MEGA DEAL</h4>
+                                <p>Save up to <strong>70% OFF</strong> Fahion collection</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-seller">
+                        <div class="card-img">
+                            <div class="raiting">
+                                <span>HOT</span>
+                            </div>
+                            <div class="time">
+                                <span>00 DAYS</span>
+                                <span>00 HRS</span>
+                                <span>00 MINS</span>
+                                <span>00 SEC</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a class="type" href="">Bedazzle striped cotton lycra dress </a>
+                            <div class="icons">
+                                <i class="fas fa-star fa-xs"></i>
+                                <i class="fas fa-star fa-xs"></i>
+                                <i class="fas fa-star fa-xs"></i>
+                                <i class="fas fa-star fa-xs"></i>
+                                <i class="fas fa-star fa-xs"></i>
+                            </div>
+                            <span class="money">$599.00</span>
+                            <a class="select-btn" href="">SELLECT OPTIONS</a>
+                        </div>
+                    </div>
+                    <div class="testemonial">
+                        <img src="img/member3_grande.webp" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+                        <div class="p-line"></div>
+                        <span>Mark doe</span>
+                    </div>
+                    <div class="discount">
+                        <img src="img/ads-07.webp" alt="">
+                        <div class="disscount-price">
+                            <span>Women's</span>
+                            <h3>49% off</h3>
+                            <p>on selected products</p>
+                            <a class="view-bnt" href="">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <!--  -->
+                    <div class="discounts">
+                        <div class="item">
+                            <img src="img/home-banner1_2000x.webp" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/home-banner2_2000x.webp" alt="">
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="new-products">
+                        <div class="title-container">
+                            <div class="title">
+                                NEW PRODUCTS
+                            </div>
+                            <div class="buttons">
+                                <a class="category" href="">BABY & KIDS</a>
+                                <a class="category" href="">BABY & KIDS</a>
+                                <a class="category" href="">BABY & KIDS</a>
+                                <a class="category" href="">BABY & KIDS</a>
+                            </div>
+                        </div>
+                        <div class="card-items">
+                            <div class="item">
+                                <div class="cardimg-cont">
+                                    <img src="img/product6_ee6de691-a75b-41a2-a66d-c37b3e8caf5d.webp" alt="">
+                                    <div class="hover-icons">
+                                        <i class="fas fa-search hover-icon"></i>
+                                        <i class="fas fa-heart hover-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a class="type" href="">
+                                        Contrast Women's Belt</a>
+                                    <div class="icons">
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                    </div>
+                                    <span class="money">$399.00</span>
+                                    <a class="select-btn" href="">SELLECT OPTIONS</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="cardimg-cont">
+                                    <img src="img/product10_1186233e-dab9-4c9a-8709-d3a2f88ab299.jpg" alt="">
+                                    <div class="hover-icons">
+                                        <i class="fas fa-search hover-icon"></i>
+                                        <i class="fas fa-heart hover-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a class="type" href="">
+                                        Contrast Women's Belt</a>
+                                    <div class="icons">
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                    </div>
+                                    <span class="money">$399.00</span>
+                                    <a class="select-btn" href="">SELLECT OPTIONS</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="cardimg-cont">
+                                    <img src="img/product21_c1ccc855-49b8-4925-8025-21e0323ba1b2.jpg" alt="">
+                                    <div class="hover-icons">
+                                        <i class="fas fa-search hover-icon"></i>
+                                        <i class="fas fa-heart hover-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a class="type" href="">
+                                        Contrast Women's Belt</a>
+                                    <div class="icons">
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                    </div>
+                                    <span class="money">$399.00</span>
+                                    <a class="select-btn" href="">SELLECT OPTIONS</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="cardimg-cont">
+                                    <img src="img/product19_3e15916b-d2bc-4b23-b469-9196804ef7a3_large.webp" alt="">
+                                    <div class="hover-icons">
+                                        <i class="fas fa-search hover-icon"></i>
+                                        <i class="fas fa-heart hover-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a class="type" href="">
+                                        Contrast Women's Belt</a>
+                                    <div class="icons">
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                    </div>
+                                    <span class="money">$399.00</span>
+                                    <a class="select-btn" href="">SELLECT OPTIONS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="best-seller">
+                        <div class="title-container">
+                            <div class="title">
+                                BEST SELLER
+                            </div>
+                            <div class="page">
+                                <i class="fas fa-chevron-left"></i>
+                                <span>||</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="card-items">
+                            <div class="item">
+                                <div class="cardimg-cont">
+                                    <img src="img/product8_b0ef07f8-effc-4e1e-a408-360a5e393f90_large.webp" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <a class="type" href="">Viscose Plain Scarf Stole </a>
+                                    <div class="icons">
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                    </div>
+                                    <span class="money">$399.00</span>
+                                    <a class="select-btn" href="">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="cardimg-cont">
+                                    <img src="img/product22_medium.webp" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <a class="type" href=""> Portia Women's Scar </a>
+                                    <div class="icons">
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                    </div>
+                                    <span class="money">$399.00</span>
+                                    <a class="select-btn" href="">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="cardimg-cont">
+                                    <img src="img/product14_85bd199d-fc22-4b9d-b7fd-8f71458c1ee5_compact.webp" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <a class="type" href="">
+                                        Contrast Women's Belt</a>
+                                    <div class="icons">
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                    </div>
+                                    <span class="money">$399.00</span>
+                                    <a class="select-btn" href="">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="featured-products">
+                        <div class="title-container">
+                            <div class="title">
+                                FEATURED PRODUCT
+                            </div>
+                            <div class="page">
+                                <i class="fas fa-chevron-left"></i>
+                                <span>||</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="card-items">
+                            <div class="item">
+                                <div class="cardimg-cont">
+                                    <img src="img/product19_3e15916b-d2bc-4b23-b469-9196804ef7a3_large.webp" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <a class="type" href="">Viscose Plain Scarf Stole </a>
+                                    <div class="icons">
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                    </div>
+                                    <span class="money">$399.00</span>
+                                    <a class="select-btn" href="">SELLECT OPTIONS</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="cardimg-cont">
+                                    <img src="img/product18_b1c946d6-f401-4066-8ccb-87a7233e8c22_large.webp" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <a class="type" href=""> Portia Women's Scar </a>
+                                    <div class="icons">
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                    </div>
+                                    <span class="money">$399.00</span>
+                                    <a class="select-btn" href="">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="cardimg-cont">
+                                    <img src="img/product13_aad11edb-26d4-4430-949b-232482a6fd63_large.webp" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <a class="type" href="">
+                                        Contrast Women's Belt</a>
+                                    <div class="icons">
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                    </div>
+                                    <span class="money">$399.00</span>
+                                    <a class="select-btn" href="">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="cardimg-cont">
+                                    <img src="img/product9_1139c224-2d7d-41c1-9597-2a41638c2be7.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <a class="type" href="">
+                                        Contrast Women's Belt</a>
+                                    <div class="icons">
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                    </div>
+                                    <span class="money">$399.00</span>
+                                    <a class="select-btn" href="">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 </body>
+
 </html>
