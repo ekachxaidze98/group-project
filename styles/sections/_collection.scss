@@ -3,44 +3,50 @@
         @include flex;
         align-items: unset;
         .side-bar{
-            width: 22.8%;
+            width: 23%;
             height: 2260px;
             background-color: orange;
             @include flex;
 
             .sale-poster{
                 width: 100%;
-                height: 19.7%;
+                height: 465px;
+                
+
+                .img{
+                    width: 100%;
+                    height: 100%;
+                }
                 
             }
 
             .categories {
                 width: 100%;
-                height: 15.5%;
+                height: 340px;
                 background-color: lime;
             }
 
             .shop {
                 width: 100%;
-                height: 12%;
+                height: 270px;
                 background-color: lime;
             }
 
             .sales {
                 width: 100%;
-                height: 18.5%;
+                height: 380px;
                 background-color: lime;
             }
 
             .offer {
                 width: 100%;
-                height: 19%;
+                height: 475px;
                 background-color: lime;
             }
 
             .custom {
                 width: 100%;
-                height: 9%;
+                height: 227px;
                 background-color: lime;
             }
 
@@ -80,38 +86,129 @@
 
         .wrapper{
             width: 75%;
-            height: 2000px;
-            background-color: orchid;
+            height: 1850px;
             @include flex;
 
 
             .collection-head{
                 width: 100%;
-                height: 2%;
-                background-color: orange;
+                height: 26px;
+                @include flex;
+
+                .title{
+                    width: 20%;
+                    height: 30px;
+                
+
+                    h2{
+                        font-family: sans-serif;
+                    }
+                }
+
+                .title-description{
+                    width: 15%;
+                    height: 30px;
+                    @include mainText;
+                    
+
+                    span{
+                        font-size: 14px;
+                        font-family: sans-serif;
+                    }
+                }
             }
 
             .collection-poster{
                 width: 100%;
-                height: 16%;
-                background-color: orange;
+                height: 391px;
+                background-size:  contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+                display: flex;
+                align-items: center;
 
-                .image{
-                    width: 100%;
-                    height: 100%;
+
+                .poster-title {
+                    width: 410px;
+                    height: 90px;
+                    margin-left: 30px;
+                    margin-top: 20px;
+                    
+
+                    h2{
+                        font-family: sans-serif;
+                        font-weight: bold;
+                        font-size: 51px;
+                        color: $white-color;
+                    }
+
+                    p{
+                        font-family: sans-serif;
+                        color: $white-color;
+                    }
                 }
+
+               
+
+            
             }
 
             .collection-category {
                 width: 100%;
-                height: 1590px;
-                background-color: orange;
-                @include flex;
+                height: 1390px;
+                @include align-cards;
+                align-items: unset;
+                justify-content: unset;
+                padding-left: 30px;
 
                 .catalogue {
-                    width: 31.5%;
-                    height: 23%;
-                    background-color:  yellow;
+                    width: 30%;
+                    height: 320px;
+                
+
+                    .picture {
+                        width: 100%;
+                        height: 215px;
+                    
+
+                        .cat-img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .cat-description {
+                        width: 100%;
+                        height: 105px;
+                        @include center;
+                    }
+                    h3{
+                        font-family: sans-serif;
+                    }
+
+                    p{
+                        color: #d1d1d1;
+                    }
+
+                    .buy {
+                        width: 170px;
+                        height: 30px;
+                        background-color: white;
+                        font-family: sans-serif;
+                        font-size: 13px;
+                        text-decoration: none;
+                        padding-top: 8px;
+                        border: 1px solid #d1d1d1;
+                        color: #666666;
+                        margin-top: 10px;
+                        font-weight: bold;
+
+                        &:hover {
+                            background-color: #0283c0;
+                            color: $white-color;
+                            transition: 0.5s;
+                        }
+                    }
+                    
                 }
             } 
         }

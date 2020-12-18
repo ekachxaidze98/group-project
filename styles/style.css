@@ -622,7 +622,7 @@
 }
 
 .collection .collection-items .side-bar {
-  width: 22.8%;
+  width: 23%;
   height: 2260px;
   background-color: orange;
   display: -webkit-box;
@@ -640,43 +640,47 @@
 
 .collection .collection-items .side-bar .sale-poster {
   width: 100%;
-  height: 19.7%;
+  height: 465px;
+}
+
+.collection .collection-items .side-bar .sale-poster .img {
+  width: 100%;
+  height: 100%;
 }
 
 .collection .collection-items .side-bar .categories {
   width: 100%;
-  height: 15.5%;
+  height: 340px;
   background-color: lime;
 }
 
 .collection .collection-items .side-bar .shop {
   width: 100%;
-  height: 12%;
+  height: 270px;
   background-color: lime;
 }
 
 .collection .collection-items .side-bar .sales {
   width: 100%;
-  height: 18.5%;
+  height: 380px;
   background-color: lime;
 }
 
 .collection .collection-items .side-bar .offer {
   width: 100%;
-  height: 19%;
+  height: 475px;
   background-color: lime;
 }
 
 .collection .collection-items .side-bar .custom {
   width: 100%;
-  height: 9%;
+  height: 227px;
   background-color: lime;
 }
 
 .collection .collection-items .wrapper {
   width: 75%;
-  height: 2000px;
-  background-color: orchid;
+  height: 1850px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,25 +696,7 @@
 
 .collection .collection-items .wrapper .collection-head {
   width: 100%;
-  height: 2%;
-  background-color: orange;
-}
-
-.collection .collection-items .wrapper .collection-poster {
-  width: 100%;
-  height: 16%;
-  background-color: orange;
-}
-
-.collection .collection-items .wrapper .collection-poster .image {
-  width: 100%;
-  height: 100%;
-}
-
-.collection .collection-items .wrapper .collection-category {
-  width: 100%;
-  height: 1590px;
-  background-color: orange;
+  height: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,10 +710,145 @@
       flex-wrap: wrap;
 }
 
+.collection .collection-items .wrapper .collection-head .title {
+  width: 20%;
+  height: 30px;
+}
+
+.collection .collection-items .wrapper .collection-head .title h2 {
+  font-family: sans-serif;
+}
+
+.collection .collection-items .wrapper .collection-head .title-description {
+  width: 15%;
+  height: 30px;
+  color: #777;
+  font-size: 14px;
+}
+
+.collection .collection-items .wrapper .collection-head .title-description span {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.collection .collection-items .wrapper .collection-poster {
+  width: 100%;
+  height: 391px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.collection .collection-items .wrapper .collection-poster .poster-title {
+  width: 410px;
+  height: 90px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.collection .collection-items .wrapper .collection-poster .poster-title h2 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 51px;
+  color: #fff;
+}
+
+.collection .collection-items .wrapper .collection-poster .poster-title p {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.collection .collection-items .wrapper .collection-category {
+  width: 100%;
+  height: 1390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  padding-left: 30px;
+}
+
 .collection .collection-items .wrapper .collection-category .catalogue {
-  width: 31.5%;
-  height: 23%;
-  background-color: yellow;
+  width: 30%;
+  height: 320px;
+}
+
+.collection .collection-items .wrapper .collection-category .catalogue .picture {
+  width: 100%;
+  height: 215px;
+}
+
+.collection .collection-items .wrapper .collection-category .catalogue .picture .cat-img {
+  width: 100%;
+  height: 100%;
+}
+
+.collection .collection-items .wrapper .collection-category .catalogue .cat-description {
+  width: 100%;
+  height: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.collection .collection-items .wrapper .collection-category .catalogue h3 {
+  font-family: sans-serif;
+}
+
+.collection .collection-items .wrapper .collection-category .catalogue p {
+  color: #d1d1d1;
+}
+
+.collection .collection-items .wrapper .collection-category .catalogue .buy {
+  width: 170px;
+  height: 30px;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+  padding-top: 8px;
+  border: 1px solid #d1d1d1;
+  color: #666666;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.collection .collection-items .wrapper .collection-category .catalogue .buy:hover {
+  background-color: #0283c0;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 * {
