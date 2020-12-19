@@ -328,115 +328,286 @@
         }
     }
 }
-<!--footer-->
-<footer>
-    <!--form-->
-    <section class="newsletter-form">
-        <div class="container">
-            <div class="form">
-                <h3>newsletter</h3>
-                <form action="#">
-                    <input type="email" name="email" id="EMAIL" placeholder="your@email.com">
-                    <input class="btn" type="submit" name="submit" value="subscribe">
-                </form>
-            </div>
-        </div>
-    <!--footer section-->
-    </section>
-    <section class="footer">
-        <div class="container">
-            <div class="footer-items">
-                <div class="footer-item">
-                    <h3>shopping guide</h3>
-                    <ul>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Blog</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> FAQs</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Payment</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Shipment</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Where is my order</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Return policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-item">
-                    <h3>style advisor</h3>
-                    <ul>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Your Account</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Information</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Adresses</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Discount</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Orders History</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Order Tracking</a></li>
-                    </ul>
-                </div>
-                <div class="footer-item">
-                    <h3>information</h3>
-                    <ul>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Site Map</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Search Terms</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Advanced Search</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> About Us</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Contact Us</a></li>
-                        <li><a href="https://bluelinea-01.myshopify.com/">> Suppliers</a></li>
-                    </ul>
-                </div>
-                <div class="footer-item">
-                    <h3>contact us</h3>
-                    <div class="addr">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>123 Main Street, Anytown, CA 12345 USA</p>
-                    </div>
-                    <div class="addr">
-                        <i class="fas fa-phone-alt"></i>
-                        <p> +1 800 123 1234</p>
-                    </div>
-                    <div class="addr">
-                        <i class="fas fa-envelope"></i>
-                        <a class="support" href="mailto:support@magikcommerce.com">support@magikcommerce.com</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--social-->
-    <section class="social">
-        <div class="container">
-            <div class="wrapper">
-                <div class="links">
-                    <ul>
-                        <li class="color-1"><a href=""><i class="fab fa-twitter"></i></a></li>
-                        <li class="color-2"><a href=""><i class="fab fa-google-plus-g"></i></a></li>
-                        <li class="color-3"><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="color-4"><a href=""><i class="fab fa-pinterest"></i></a></li>
-                        <li class="color-5"><a href=""><i class="fas fa-rss"></i></a></li>
-                        <li class="color-6"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="color-7"><a href=""><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-                <div class="payment">
-                    <ul>
-                        <li>
-                            <img src="img/cc-paypal.webp" alt="">
-                        </li>
-                        <li>
-                            <img src="img/cc-visa.webp" alt="">
-                        </li>
-                        <li>
-                            <img src="img/cc-amex.webp" alt="">
-                        </li>
-                        <li>
-                            <img src="img/cc-mastercard.webp" alt="">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--copyright-->
-    <section class="copyright">
-        <div class="container">
-            <div class="copyright-wrapper">
-                <p>© 2020  All Rights Reserved.<a href="https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore"> Powered by Shopify</a></p>
-            </div>
-        </div>
-    </section>
-</footer>
+footer {
+    .newsletter-form {
+        background-color: #444444;
+        margin-top: 20px;
+
+        .container {
+            .form {
+                width: 100%;
+                flex-wrap: wrap;
+                display: flex;
+                justify-content: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                @media only screen and (max-width: 768px) {
+                    justify-content: unset;
+                    width: 90%;
+                    padding: 0 10px;
+                }
+                
+
+                h3 {
+                    width: 115px;
+                    height: 30px;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    margin-top: 18px;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                    font-family: Poppins, sans-serif;
+
+                }
+
+                form {
+                    margin-top: 9px;
+
+                    input {
+                        width: 450px;
+                        height: 40px;
+                        border-radius: 4px;
+                        outline: none;
+                        border-style: none;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        @media only screen and (max-width: 600px) {
+                            width: 80%;
+                        }
+                    }
+
+                    .btn {
+                        width: 130px;
+                        height: 40px;
+                        background-color: #0183c1;
+                        color: #ffffff;
+                        font-size: 16px;
+
+                        @media only screen and (max-width: 768px) {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        background-color: #333333;
+        border-bottom: 2px solid #444444;
+
+        .container {
+            .footer-items {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 20px;
+                flex-wrap: wrap;
+
+                .footer-item {
+                    width: 25%;
+                    height: 200px;
+                    flex-direction: column;
+                    display: flex;
+                    padding: 10px 10px 10px 10px;
+                    border-left: 2px solid #444444;
+                    @media only screen and (max-width: 768px) {
+                          width: 100%;
+                    }
+
+                    h3 {
+                        color: #ffffff;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        padding-bottom: 7px;
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        list-style: none;
+
+                        li {
+                            a {
+                                color: #777;
+                                text-decoration: none;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+
+                    .addr {
+                        width: 200px;
+                        height: 45px;
+                        display: flex;
+
+
+                        i {
+                            color: #fff;
+                            background-color: #0183C1;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 25px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 5px;
+
+                        }
+
+                        p {
+                            padding-left: 10px;
+                            color: #aaaaaa;
+                            font-size: 9px;
+                            margin-top: 9px;
+
+                        }
+
+                        .support {
+                            color: #aaaaaa;
+                            font-size: 10px;
+                            text-decoration: none;
+                            margin-left: 10px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+
+                .footer-item:nth-child(1) {
+                    border-left: none;
+                }
+                .footer-item:nth-child(4) {
+                    @media only screen and (max-width: 970px) {
+                         width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .social {
+        width: 100%;
+        background-color: #333333;
+        border-bottom: 2px solid #444444;
+
+        .container {
+            .wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 25px 0;
+                flex-wrap: wrap;
+                @media only screen and (max-width: 768px) {
+                     @include center();     
+                }
+
+                .links {
+                    
+                    justify-content: space-between;
+                    display: flex;
+                    @media only screen and (max-width: 768px) {
+                        width: 100%; 
+                        @include center();
+                        margin-bottom: 15px;
+
+                    }
+
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        list-style: none;
+                        align-items: center;
+
+                        li {
+                            background: #fd9f13;
+                            border-radius: 3px;
+                            margin-left: 8px;
+
+                            a {
+                                text-decoration: none;
+                                border-radius: 3px;
+                                color: #fff;
+                                width: 35px;
+                                height: 35px;
+                                line-height: 35px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                i {
+                                    border-radius: 3px;
+                                }
+
+                            }
+                        }
+                        .color-1{
+                            background-color: #0183c1;
+                        }
+                        .color-2{
+                            background-color: #e94c0e;
+                        }
+                        .color-3{
+                            background-color: #337ab7;
+                        }
+                        .color-4{
+                            background-color: #b90707;
+                        }
+                        .color-5{
+                            background-color: #e9ad0a;
+                        }
+                        .color-6{
+                            background-color: #1893cc;
+                        }
+                        .color-7{
+                            background-color: #f33b3b;
+                        }
+                    }
+                }
+                .payment{
+                    justify-content: space-between;
+                    display: flex;
+                    @media only screen and (max-width: 768px) {
+                        width: 100%; 
+                        @include center();
+
+                    }
+                    
+                    ul{
+                        display: flex;
+                        justify-content: center;
+                        list-style: none;
+                        align-items: center;
+
+                        li{
+                            width: 60px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright{
+        width: 100%;
+        background-color: #333333;
+        border-bottom: 4px solid white;
+        .container{
+            .copyright-wrapper{
+                width: 100%;
+                height: 70px;
+                @include center();
+                p{
+                    font-size: 14px;
+                    color: #838080;
+                    a{
+                        font-size: 14px;
+                        color: #aaaaaa;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
