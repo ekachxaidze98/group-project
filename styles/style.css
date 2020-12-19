@@ -1262,7 +1262,6 @@
 
 .collection .collection-items .side-bar {
   width: 23%;
-  height: 2260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1302,7 +1301,6 @@
 
 .collection .collection-items .side-bar .categories {
   width: 100%;
-  height: 340px;
   border: 1px solid #eaeaea;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -1365,7 +1363,6 @@
 
 .collection .collection-items .side-bar .shop {
   width: 100%;
-  height: 270px;
   border: 1px solid #eaeaea;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -1724,7 +1721,6 @@
 
 .collection .collection-items .wrapper .collection-category {
   width: 100%;
-  height: 1390px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1748,7 +1744,6 @@
 
 .collection .collection-items .wrapper .collection-category .catalogue {
   width: 30%;
-  height: 330px;
 }
 
 @media only screen and (max-width: 970px) {

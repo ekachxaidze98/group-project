@@ -5,7 +5,7 @@
       
         .side-bar{
             width: 23%;
-            height: 2260px;
+            
             @include flex;
             padding-top: 20px;
             @media only screen and (max-width: 768px){
@@ -37,7 +37,7 @@
 
             .categories {
                 width: 100%;
-                height: 340px;
+                
                 border: 1px solid #eaeaea;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
@@ -88,7 +88,7 @@
 
             .shop {
                 width: 100%;
-                height: 270px;
+                
                 border: 1px solid #eaeaea;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
@@ -361,7 +361,7 @@
 
             .collection-category {
                 width: 100%;
-                height: 1390px;
+                
                 @include align-cards;
                 align-items: unset;
                 justify-content: unset;
@@ -369,7 +369,7 @@
 
                 .catalogue {
                     width: 30%;
-                    height: 330px;
+                    
 
                     @media only screen and (max-width: 970px){
                             width: 45%;
