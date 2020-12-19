@@ -2,15 +2,30 @@
     .collection-items {
         @include flex;
         align-items: unset;
+      
         .side-bar{
             width: 23%;
             height: 2260px;
-            background-color: orange;
             @include flex;
+            padding-top: 20px;
+            @media only screen and (max-width: 768px){
+                width: 90%;
+                padding-left: 20px;
+
+            }
+           
+           
 
             .sale-poster{
                 width: 100%;
                 height: 465px;
+
+                @media only screen and (max-width: 768px){
+                    width: 40%;
+    
+                }
+
+
                 
 
                 .img{
@@ -23,72 +38,267 @@
             .categories {
                 width: 100%;
                 height: 340px;
-                background-color: lime;
+                border: 1px solid #918d8d;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+
+               
+
+                .list-title {
+                    width: 100%;
+                    height: 52px;
+                    @include flex;
+                    border-bottom: 1px solid #918d8d;
+                    h4{
+                        font-family: sans-serif;
+                        font-weight: bold;
+                        margin-left: 20px;
+                    }
+                }
+
+                .list-items{
+                    list-style-type: none;
+                    margin: 15px;
+
+                    li{
+                        display: flex;
+                        justify-content: space-between;
+                        
+                        a{
+                            text-decoration: none;
+                            color: $text-primary;
+                            font-family: sans-serif;
+                            font-size: 12px;
+                            margin: 5px 0;
+
+                            &:hover {
+                                color: $primary-color;
+                                transition: 0.5s;
+                            }
+                            i{
+                                margin: 0 5px;
+                            }
+                        }
+                    }
+                    
+                }
+
+
             }
 
             .shop {
                 width: 100%;
                 height: 270px;
-                background-color: lime;
+                border: 1px solid #918d8d;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            
+
+                .shop-by{
+                    width: 100%;
+                    height: 52px;
+                    @include flex;
+                    border-bottom: 1px solid  #918d8d;
+                    
+                    
+                    h4{
+                        margin-left: 20px;
+                        font-family: sans-serif;
+                        font-weight: bold;
+                        
+                    }
+
+                }
+
+                .shop-by-categories{
+                    width: 220px;
+                    height: 195px;
+                    margin:10px 20px;
+                    @include flex;
+
+
+                    .color {
+                        width: 100%;
+                        height: 53px;
+                        @include flex;
+
+                        h4{
+                            font-family: sans-serif;
+                            font-weight: bold;
+                            font-size: 14px;
+                            
+                        }
+
+                        .find{
+                            width: 100%;
+                            height: 30px;
+                            @include flex;
+                            padding: 0 5px;
+                            border: 1px solid #918d8d;
+                            border-radius: 2px;
+                        }
+                    }
+                    
+                }
             }
 
             .sales {
                 width: 100%;
                 height: 380px;
-                background-color: lime;
+                border: 1px solid #918d8d;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            
+
+                .best-sale {
+                    width: 100%;
+                    height: 53px;
+                    @include flex;
+                    border-bottom: 1px solid #918d8d;
+                    h4{
+                        font-family: sans-serif;
+                        font-weight: bold;
+                        margin-left: 20px;
+                    }
+
+                    .arrows {
+                        width: 30px;
+                        height: 53px;
+                        margin-right: 20px;
+                        @include flex;
+                        cursor: pointer;
+
+                        .border{
+                            width: 2px;
+                            height: 20px;
+                            
+                        }
+                    }
+                }
+                .sale-content{
+                    width: 181px;
+                    height: 300px;
+                    margin: 20px 35px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    
+
+
+                    .sale-photo {
+                        width: 100%;
+                        height: 181px;
+
+                        .sale-img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .sale-text{
+                        width: 100%;
+                        height: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        h5{
+                            font-weight: bold;
+                            font-family: sans-serif;
+                            color: #666666;
+                            &:hover {
+                                color: $primary-color;
+                                transition: 0.5s;
+                            }
+                        }
+                        .stars{
+                            color: #bbb;
+                        }
+                        .span {
+                            font-family: sans-serif;
+                            font-weight: bold;
+                        }
+
+                        a{
+                            width: 100px;
+                            height: 30px;
+                            border: 1px solid #918d8d;
+                            font-size: 11px;
+                            font-weight: bold;
+                            font-family: sans-serif;
+                            text-decoration: none;
+                            text-align: center;
+                            padding-top: 7px;
+                            color: #666666;
+
+                            &:hover {
+                                color:$white-color;
+                                background-color: $primary-color;
+                                transition: 0.5s;
+                            }
+
+                        }
+                    }
+                }
             }
 
             .offer {
                 width: 100%;
                 height: 475px;
-                background-color: lime;
+
+                @media only screen and (max-width: 768px){
+                    width: 40%;
+    
+                }
+        
+
+                .hot-trend {
+                    width: 100%;
+                    height: 100%;
+
+                }
             }
 
             .custom {
                 width: 100%;
                 height: 227px;
-                background-color: lime;
+                border: 1px solid #918d8d;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                
+
+                h4{
+                    width: 100%;
+                    height: 53px;
+                    border-bottom: 1px solid #918d8d;
+                     padding: 20px 10px;
+                     font-family: sans-serif;
+                     font-weight: bold;
+                }
+                p{
+                    font-size: 15px;
+                    font-family: sans-serif;
+                    text-align: left;
+                    padding: 20px 10px;
+                    color: #666666;
+                }
             }
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         .wrapper{
             width: 75%;
             height: 1850px;
+            padding-top: 20px;
             @include flex;
 
+
+            @media only screen and (max-width: 768px){
+                width: 90%;
+                padding-left: 20px;
+
+            }
+
+           
 
             .collection-head{
                 width: 100%;
@@ -147,10 +357,6 @@
                         color: $white-color;
                     }
                 }
-
-               
-
-            
             }
 
             .collection-category {
@@ -163,12 +369,23 @@
 
                 .catalogue {
                     width: 30%;
-                    height: 320px;
+                    height: 330px;
+
+                    @media only screen and (max-width: 970px){
+                            width: 45%;
+
+                    }
+
+                    @media only screen and (max-width: 600px){
+                        width: 90%;
+                        padding-left: 20px;
+        
+                    }
                 
 
                     .picture {
                         width: 100%;
-                        height: 215px;
+                        height: 245px;
                     
 
                         .cat-img{
@@ -186,7 +403,7 @@
                     }
 
                     p{
-                        color: #d1d1d1;
+                        color: #918d8d;
                     }
 
                     .buy {
