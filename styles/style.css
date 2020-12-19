@@ -14,13 +14,15 @@
 
 .carusel-section .items .menu {
   width: 23%;
-  height: 480px;
+  height: 470px;
   border: 1px solid #f5f5f5;
-  padding: 20px;
 }
 
 .carusel-section .items .menu ul li {
   list-style-type: none;
+  padding: 0 20px;
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
 }
 
 .carusel-section .items .menu ul li a {
@@ -30,26 +32,44 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px 0;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
 }
 
 .carusel-section .items .menu ul li a .menu-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .carusel-section .items .menu ul li a .menu-item i {
   margin-right: 5px;
+}
+
+.carusel-section .items .menu ul li:not(:last-child) {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.carusel-section .items .menu ul li:hover {
+  background-color: #f8f8f8;
+}
+
+.carusel-section .items .menu ul li:hover a {
+  color: #333;
 }
 
 @media only screen and (max-width: 768px) {
@@ -167,8 +187,22 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 970px) {
+  .main-section .items {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+}
+
 .main-section .items .side-bar {
   width: 23%;
+}
+
+@media only screen and (max-width: 970px) {
+  .main-section .items .side-bar {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -243,39 +277,55 @@
 }
 
 .main-section .items .side-bar .top-seller {
-  height: 400px;
+  height: 420px;
   margin: 25px 0;
   background-color: #fff;
   border: 1px  solid #eaeaea;
 }
 
+@media only screen and (max-width: 970px) {
+  .main-section .items .side-bar .top-seller {
+    height: 360px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .main-section .items .side-bar .top-seller {
-    height: 560px;
+    height: 570px;
   }
 }
 
 .main-section .items .side-bar .top-seller .card-img {
-  background-image: url("../img/product3_1dec95eb-c218-4106-8ac6-b7d83c498641.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-section .items .side-bar .top-seller .card-img img {
   height: 260px;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.35s ease-in;
+  transition: -webkit-transform 0.35s ease-in;
+  transition: transform 0.35s ease-in;
+  transition: transform 0.35s ease-in, -webkit-transform 0.35s ease-in;
+}
+
+@media only screen and (max-width: 970px) {
+  .main-section .items .side-bar .top-seller .card-img img {
+    height: 200px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  .main-section .items .side-bar .top-seller .card-img {
+  .main-section .items .side-bar .top-seller .card-img img {
     height: 430px;
   }
 }
 
 .main-section .items .side-bar .top-seller .card-img .raiting {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .main-section .items .side-bar .top-seller .card-img .raiting span {
@@ -287,6 +337,11 @@
 }
 
 .main-section .items .side-bar .top-seller .card-img .time {
+  left: 15px;
+  text-align: center;
+  margin-top: 0;
+  position: absolute;
+  top: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,6 +389,15 @@
   .main-section .items .side-bar .top-seller {
     width: 70%;
   }
+}
+
+.main-section .items .side-bar .top-seller:hover .type {
+  color: #0183C1;
+}
+
+.main-section .items .side-bar .top-seller:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main-section .items .side-bar .testemonial {
@@ -470,6 +534,12 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 970px) {
+  .main-section .items .wrapper .discounts {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1049,7 +1119,6 @@ html, body {
 
 .search-section .items .item button {
   outline: none;
-  border-left: 1px solid #e5e5e5;
   background-color: transparent;
   border: none;
   color: #68635f;
@@ -1059,6 +1128,8 @@ html, body {
   bottom: 0px;
   right: 12px;
   overflow: hidden;
+  border-left: 1px solid #ddd1d1;
+  padding-left: 15px;
 }
 
 .search-section .items .item .shop {
@@ -1352,18 +1423,15 @@ html, body {
 }
 
 .card-items .item .cardimg-cont .hover-icons {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 30px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  position: absolute;
+  bottom: -45px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 10px;
 }
 
 .card-items .item .cardimg-cont .hover-icons .hover-icon {
@@ -1372,10 +1440,6 @@ html, body {
   background-color: #fff;
   width: 40px;
   height: 40px;
-  position: absolute;
-  bottom: -45px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1390,6 +1454,7 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin-right: 5px;
 }
 
 @media only screen and (max-width: 970px) {
@@ -1421,10 +1486,6 @@ html, body {
   .card-items .item .cardimg-cont img {
     width: 100%;
   }
-}
-
-.card-items .item .cardimg-cont:hover .hover-icon {
-  bottom: 0;
 }
 
 .card-items .item .card-body {
@@ -1473,5 +1534,9 @@ html, body {
 .card-items .item:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.card-items .item:hover .hover-icons {
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -83,7 +83,6 @@
               }
               button {
                   outline: none;
-                border-left: 1px solid #e5e5e5;
                 background-color: transparent;
                 border: none;
                 color: #68635f;
@@ -93,6 +92,8 @@
                 bottom: 0px;
                 right: 12px;
                 overflow: hidden;
+                border-left: 1px solid rgb(221, 209, 209);
+                padding-left: 15px;
               }
             .shop {
                 @include center();
@@ -256,18 +257,24 @@
             overflow: hidden;
             transition: 0.5s;
             .hover-icons {
-                @include align-cards();
+                width: 100%;
+                display: flex;
+                position: absolute;
+                bottom: -45px;
+                transition: 0.5s;
+                margin-left: 10px;
+                
+                
                 .hover-icon {
                     border-radius: 50%;
                     color: $primary-color;
                     background-color: $white-color;
                     width: 40px;
                     height: 40px;
-                    position: absolute;
-                    bottom: -45px;
-                    transition: 0.5s;
-                    @include center();
+                   @include center();
+                   margin-right: 5px;
                 }
+                
             }
             @media only screen and (max-width: 970px) {
                 height: 270px;
@@ -287,9 +294,7 @@
                 }
                 
             }
-            &:hover .hover-icon{
-                bottom: 0;
-            }
+            
         }
         .card-body {
             @include center();
@@ -317,6 +322,9 @@
         }
         &:hover img {
             transform: scale(1.1);
+        }
+        &:hover .hover-icons{
+            bottom: 0;
         }
     }
 }
